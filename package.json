@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "nodemon": "^2.0.20"
+  },
+  "name": "tekom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

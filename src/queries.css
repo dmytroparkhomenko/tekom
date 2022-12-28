@@ -1,0 +1,52 @@
+@media screen and (max-width: 990px) { 
+    h1 {
+        font-size: 40px;
+        font-weight: 900; 
+        margin-bottom: 10px;
+    }
+    
+    
+    h3 {
+        font-size: 22px;
+        font-weight: 300; 
+        margin-bottom: 30px;
+    }
+
+    .header-inner {
+        width: 90%;
+        left: 50%;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        border: 2px solid #fff; 
+        font-size: 20px; 
+        margin: 5px;
+    } 
+
+    .card {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    .slider-inner img {
+        width: 40px;
+    }
+
+    .slider-inner-corousel {
+        height: auto;
+    }
+
+    .slider-inner-corousel img {
+        display: none;
+    }
+
+    .active {
+        display: block !important;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+}
