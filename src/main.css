@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 25px;
+    margin-top: 35px;
     text-transform: uppercase;
     position: relative;
 }
@@ -32,13 +32,19 @@ h2::after {
 h3 {
     font-size: 22px;
     font-weight: 300; 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 a {
     text-decoration: none;
     padding: 0;
 }
+
+input, input:focus {
+    color: #fff;
+    font-size: 18px;
+}
+
 
 ul {
     display: flex;
@@ -69,6 +75,14 @@ header {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+}
+
+.downFromHeader {
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .navbar {
@@ -146,10 +160,14 @@ header {
     border: 3px solid #FFC700;
     border-radius: 2px;
     padding: 5px 15px;
-    background-color: #fff;
     width: 100%;
     font-weight: bold;
     margin-top: 10px;
+    background: none;
+}
+
+.card-btn:hover {
+    background-color: #FFC700;
 }
 
 /* Slider */
@@ -218,6 +236,88 @@ header {
     margin: 0;
 }
 
+/* Form */
+
+.form-header h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.form-header h1:last-child {
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.form-header h3 {
+    color: #FFC700;
+    font-weight: bold;
+}
+
+.form {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/hangar2blur.png)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+    background-size: cover;
+
+    color: #fff;
+
+    width: 100%;
+    height: auto;
+    margin: 20px auto 20px auto;
+    padding: 20px 0;
+}
+
+
+.form-inner {
+    width: 70%;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.from__el {
+    margin: 15px 0;
+}
+
+.form form p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.form form input {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 3px;
+
+    font-size: 18px;
+    padding: 10px 60px 10px 20px;
+}
+
+.btn-form-submit {
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 3px;
+    border: 3px solid #FFC700;
+    background: none;
+    color: #fff;
+    
+    transition: .5s all ease;
+
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.btn-form-submit:hover {
+    border: 3px solid #fff;
+    background: #fff;
+    color: #FFC700;
+}
 
 
 /* about */
@@ -225,11 +325,45 @@ header {
     margin: 0 auto;
 }
 .about p {
-    font-size: 19px;
+    font-size: 21px;
     text-align: center;
     /* max-width: 1200px; */
     margin: 0 auto;
+    font-weight: 300;
 }
+
+/* Contact */
+
+.contact-inner {
+    margin: 50px auto;
+}
+
+.contact-inner .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-inner h5 {
+    font-size: 23px;
+}
+
+.contact-inner p {
+    font-size: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-item p, .contact-item img, .contact-item h5 {
+    /* padding: 0 4px; */
+    margin: 3px 5px;
+} 
+
 
 
 /* footer */
@@ -237,8 +371,7 @@ header {
 footer {
     width: 100%;
     background-color: #FFC700;  
-    margin-top: 20px;
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 footer h3, footer h5 {
@@ -249,10 +382,10 @@ footer h3, footer h5 {
 }
 
 .me, .me h5, .me a {
-    background-color: #4f3e00;
+    background-color: #d8a900;
     margin: 0;
-    color: #fff;
-    padding: 8px 4px;
+    color: #000;
+    padding: 5px 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -265,3 +398,4 @@ footer h3, footer h5 {
     font-weight: 300;
     margin: 0;
 }
+
