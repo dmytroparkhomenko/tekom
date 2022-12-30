@@ -49,7 +49,6 @@
         flex-direction: column;
     }
 
-
     .form {
         height: auto;
     }
@@ -76,6 +75,14 @@
         font-size: 30px;
         margin-top: 0;
     }
-    
+    #about p {
+        font-size: 18px;
+    }
+    .contact-inner .row {
+        margin: 0 auto;
+    }
+    .contact-inner .row .col {
+        margin: 15px auto;
+    }
 
 }

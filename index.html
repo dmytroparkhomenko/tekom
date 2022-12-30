@@ -22,16 +22,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Про компанію</a>
+                    <a class="nav-link active" href="#services">Послуги</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Наші послуги</a>
+                    <a class="nav-link active" href="#slider">Наші роботи</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Контакти</a>
+                    <a class="nav-link active" href="#form">Отримати розрахунок</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Зв'зок з нами</a>
+                    <a class="nav-link active" aria-current="page" href="#about">Про компанію</a>
+                  </li>    
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contact">Контакти</a>
                   </li>
                 </ul>
               </div>
@@ -40,15 +43,15 @@
             <div class="header-inner">
                 <h1>Безкаркасні ангари</h1>
                 <h3>Будівництво безкаркасних ангарів для зберігання зернових та тахніки в Україні</h3>
-                <button type="button" class="btn btn-outline-light">Замовити ангар</button>
-                <button type="button" class="btn btn-outline-light">Замовити разрахунок</button>
+                <a href="#contact" type="button" class="btn btn-outline-light">Замовити ангар</a>
+                <a href="#form" type="button" class="btn btn-outline-light">Замовити разрахунок</a>
             </div>
             <!-- <img class="downFromHeader" src="src/images/chevron-compact-down.svg" alt=""> -->
         </header>  
 
         <div class="container">
 
-          <div class="services">
+          <div id="services">
               <div class="blockHeader">
                 <h2>Наші послуги</h2>
               </div>
@@ -75,20 +78,20 @@
                           <p>Длина - 100м</p>
                         </div>
 
-                        <b><p class="card-text">Стоимость работы:</p></b>
+                        <b><p class="card-text">Вартість работы:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1000 грн / м²</p>
                         </div>
 
 
-                        <b><p class="card-text">Стоимость ангара:</p></b>
+                        <b><p class="card-text">Вартість ангара:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1800 грн / м²</p>
                         </div>
 
-                        <button href="#" class="card-btn">Замовити ангар</button>
+                        <a href="#form"><button class="card-btn">Замовити ангар</button></a>
 
                       </div>
                     </div>
@@ -114,20 +117,20 @@
                           <p>Длина - 100м</p>
                         </div>
 
-                        <b><p class="card-text">Стоимость работы:</p></b>
+                        <b><p class="card-text">Вартість работы:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1000 грн / м²</p>
                         </div>
 
 
-                        <b><p class="card-text">Стоимость ангара:</p></b>
+                        <b><p class="card-text">Вартість ангара:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1800 грн / м²</p>
                         </div>
 
-                        <button href="#" class="card-btn">Замовити ангар</button>
+                        <a href="#form"><button class="card-btn">Замовити ангар</button></a>
 
                       </div>
                     </div>
@@ -153,20 +156,20 @@
                           <p>Длина - 100м</p>
                         </div>
 
-                        <b><p class="card-text">Стоимость работы:</p></b>
+                        <b><p class="card-text">Вартість работы:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1000 грн / м²</p>
                         </div>
 
 
-                        <b><p class="card-text">Стоимость ангара:</p></b>
+                        <b><p class="card-text">Вартість ангара:</p></b>
                         <div class="desc">
                           <img src="src/images/dot.png" alt="">
                           <p>1800 грн / м²</p>
                         </div>
 
-                        <button href="#" class="card-btn">Замовити ангар</button>
+                        <a href="#form"><button class="card-btn">Замовити ангар</button></a>
 
                       </div>
                     </div>
@@ -177,7 +180,7 @@
               </div>
           </div>
 
-          <div class="slider">
+          <div id="slider">
             
             <div class="blockHeader">
               <h2>Наші роботи</h2>
@@ -245,7 +248,7 @@
 
         </div>
 
-          <div class="form">
+          <div id="form">
               <div class="form-bg"></div>
               <div class="form-inner">
                 <div class="form-header">
@@ -254,17 +257,17 @@
                 
                   <h1>Це - безкоштовно <span style="color: #FFC700">!</span></h1>
                 </div>
-                <form action="submit">
+                <form method="post" action="src/mail.php" >
                       <div class="from__el">
-                        <p>Ваше ім’я (ПІБ)</p><input id="name" type="text"> 
+                        <p>Ваше ім’я (ПІБ)</p><input id="name" type="text" name="name"> 
                       </div>
                       <div class="from__el">
-                        <p>Ваш контактний номер </p><input id="number" value="+38" type="text"> 
+                        <p>Ваш контактний номер </p><input name="phone" id="number" value="+38" type="text"> 
                       </div>
                       <div class="from__el">
-                        <p>Ел. пошта (необов’язково)</p><input id="email" type="text">
+                        <p>Ел. пошта (не обов’язково)</p><input name="email" id="email" type="text">
                       </div>
-                    <button class="btn-form-submit">Отримати розрахунок</button>
+                    <button type="submit" class="btn-form-submit">Отримати розрахунок</button>
                 </form>
 
               </div>
@@ -273,71 +276,71 @@
 
         <div class="container">
 
-          <div class="about">
+          <div id="about">
             <div class="blockHeader">
               <h2>Про компанію</h2>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus distinctio labore modi, tenetur soluta accusamus culpa! Vero porro tempore illo id quam quae soluta aliquam maxime nam reiciendis modi cumque dolores quisquam, beatae deserunt fugiat dolorem fugit voluptates molestiae itaque voluptatum quibusdam inventore non? Sequi, nobis dicta! Soluta, quibusdam?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus distinctio labore modi, tenetur soluta accusamus culpa! Vero porro tempore illo id quam quae soluta aliquam maxime nam reiciendis modi cumque dolores quisquam, beatae deserunt fugiat dolorem fugit voluptates molestiae itaque voluptatum quibusdam inventore non? Sequi, nobis dicta! Soluta, quibusdam?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus distinctio labore modi, tenetur soluta accusamus culpa! Vero porro tempore illo id quam quae soluta aliquam maxime nam reiciendis modi cumque dolores quisquam, beatae deserunt fugiat dolorem fugit voluptates molestiae itaque voluptatum quibusdam inventore non? Sequi, nobis dicta! Soluta, quibusdam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus distinctio labore modi, tenetur soluta accusamus culpa! Vero porro tempore illo id quam quae soluta aliquam maxime nam reiciendis modi cumque dolores quisquam, beatae deserunt fugiat dolorem fugit voluptates molestiae itaque voluptatum quibusdam inventore non? Sequi, nobis dicta! Soluta, quibusdam?</p>
           </div>
 
-          <div class="contact">
+          <div id="contact">
             <div class="blockHeader">
               <h2>Зв'язатись з нами</h2>
             </div>
 
               <div class="contact-inner">
                 
-                <div class="row">
+                <div class="row align-items-center">
                   <div class="col">
                     <div class="contact-item">
                       <img src="src/images/dot.png" alt="...">
                       <h5>По почті</h5>
                     </div>
-
                     <div class="contact-item">
-                      <img src="src/images/envelope.svg" alt="...">
+                      <img class="contact-item-svg" src="src/images/envelope.svg" alt="...">
                       <p>email@gmail.com</p>
                     </div>
                   </div>
                   <div class="col">
                     <div class="contact-item">
                       <img src="src/images/dot.png" alt="...">
-                      <h5>По почті</h5>
+                      <h5>По телефону</h5>
                     </div>
-
                     <div class="contact-item">
-                      <img src="src/images/envelope.svg" alt="...">
-                      <p>email@gmail.com</p>
+                      <img class="contact-item-svg" src="src/images/envelope.svg" alt="...">
+                      <p>+38XXXXXXXXXX</p>
                     </div>
                   </div>
                 </div>
-                <div class="row">
+
+                <div class="row align-items-center">
                   <div class="col">
                     <div class="contact-item">
                       <img src="src/images/dot.png" alt="...">
-                      <h5>По почті</h5>
+                      <h5>По вайберу</h5>
                     </div>
-
                     <div class="contact-item">
-                      <img src="src/images/envelope.svg" alt="...">
-                      <p>email@gmail.com</p>
+                      <img class="contact-item-svg" src="src/images/viber.png" alt="...">
+                      <p>+38XXXXXXXXXX</p>
                     </div>
                   </div>
                   <div class="col">
                     <div class="contact-item">
                       <img src="src/images/dot.png" alt="...">
-                      <h5>По почті</h5>
+                      <h5>По Телеграму</h5>
                     </div>
-
                     <div class="contact-item">
-                      <img src="src/images/envelope.svg" alt="...">
-                      <p>email@gmail.com</p>
+                      <img class="contact-item-svg" src="src/images/telegram.svg" alt="...">
+                      <p><a href="https://t.me/username">@username</a></p>
                     </div>
                   </div>
                 </div>
-                <!-- Переписать: не столбцом, а колонкой -->
+
                 <!-- + не забыть JS: нужны скрипты на страницу и форма -->
                 
               </div>
@@ -347,9 +350,10 @@
         </div>
 
         <footer class="me">
-          <h5>Розробка сайтів:</h5><a class="me-link" href="mailto:8000646@gmail.com">8000646@gmail.com</a>
+          <h5>Створення сайтів:</h5><a class="me-link" href="mailto:8000646@gmail.com">8000646@gmail.com</a>   
         </footer>
         <footer>
+          
           <h3>МП “ТЕКОМ”, з 1991</h3>
           <h5> &copy; Всі права захищено, 2023</h5>
         </footer>

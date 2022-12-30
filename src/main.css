@@ -123,7 +123,7 @@ header {
     text-align: left;
 }
 
-.header-inner button {
+.header-inner a {
     float: left;
 }
 /* Services */
@@ -164,10 +164,14 @@ header {
     font-weight: bold;
     margin-top: 10px;
     background: none;
+    color: #000;
+
+    text-align: center;
 }
 
 .card-btn:hover {
     background-color: #FFC700;
+    color: #000;
 }
 
 /* Slider */
@@ -253,7 +257,7 @@ header {
     font-weight: bold;
 }
 
-.form {
+#form {
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/hangar2blur.png)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -264,7 +268,7 @@ header {
 
     width: 100%;
     height: auto;
-    margin: 20px auto 20px auto;
+    margin: 40px auto;
     padding: 20px 0;
 }
 
@@ -283,12 +287,12 @@ header {
     margin: 15px 0;
 }
 
-.form form p {
+#form form p {
     margin: 0;
     font-size: 18px;
 }
 
-.form form input {
+#form form input {
     background: none;
     border: 2px solid #fff;
     border-radius: 3px;
@@ -321,10 +325,10 @@ header {
 
 
 /* about */
-.about {
+#about {
     margin: 0 auto;
 }
-.about p {
+#about p {
     font-size: 21px;
     text-align: center;
     /* max-width: 1200px; */
@@ -343,6 +347,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    margin: 50px auto;
 }
 
 .contact-inner h5 {
@@ -356,13 +362,19 @@ header {
 .contact-item {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .contact-item p, .contact-item img, .contact-item h5 {
     /* padding: 0 4px; */
     margin: 3px 5px;
 } 
+
+.contact-item-svg {
+    width: 22px;
+}
 
 
 
@@ -381,8 +393,9 @@ footer h3, footer h5 {
     
 }
 
+
 .me, .me h5, .me a {
-    background-color: #d8a900;
+    background-color: #ecb900;
     margin: 0;
     color: #000;
     padding: 5px 5px;
